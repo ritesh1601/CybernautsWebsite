@@ -1,0 +1,52 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  background: #0F0F0F;
+}
+.Heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%;
+}
+.faculty{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+.shadow{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.staatliches-regular {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .staatliches-regular-thin {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.font-size1{
+    font-size: 970%;
+}
+.font-size2{
+    font-size: 980%;
+    color: aliceblue;
+}
+.gradient-text {
+    background: linear-gradient(to right, #FFA566, #FF6E06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.font-size3{
+    font-size: 320%;
+    color: azure;
+}
