@@ -266,7 +266,9 @@ body{
 .explore_btn{
   margin: 0% 45%;
 }
-
+.extra_projects{
+ display: none;
+}
 
 
 
