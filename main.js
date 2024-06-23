@@ -13,9 +13,9 @@ document.getElementById("Explore_Button").addEventListener("click", function() {
   }
 });
 
-function display_more_projects() {
-        document.getElementById("extra_project1").style.display = "block";
-        document.getElementById("extra_project2").style.display = "block";
+function display_more_projects() { 
+  document.getElementById("extra_project1").style.display = "block";
+  document.getElementById("extra_project2").style.display = "block"; 
 }
 function show_less_projects() {
     const exploreButton = document.getElementById("Explore_Button");
@@ -64,3 +64,43 @@ function show_less_projects() {
     exploreButton.innerHTML = `${moreIconTemplate} Explore All`;
     clickCount=0;
   }
+
+
+
+
+/* Animation of Amazing-Crazy-Cool */
+function amazingCrazyCool() { // Recursive call for continuous loop
+  amazing();
+  setTimeout(crazy, 550); // Delay next function call by 1 second
+}
+
+function amazing() {
+  document.getElementById("Animation-a-c-c-a").innerHTML = 'Amazing';
+}
+
+function crazy() {
+  document.getElementById("Animation-a-c-c-a").innerHTML = 'Crazy';
+  setTimeout(cool, 550); // Delay next function call by 1 second
+}
+
+function cool() {
+  document.getElementById("Animation-a-c-c-a").innerHTML = 'Cool';
+  setTimeout(awesome, 550); // Delay next function call by 1 second
+}
+
+function awesome() {
+  document.getElementById("Animation-a-c-c-a").innerHTML = 'Awesome';
+  setTimeout(amazingCrazyCool, 550); // Call back to start over
+}
+
+// Call the animation function once to initiate the loop
+amazingCrazyCool();
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------- */
+
+/* Rotating the images of the faculty */

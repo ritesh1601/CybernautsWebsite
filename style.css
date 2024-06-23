@@ -160,11 +160,15 @@ body{
   }
 /*poppins*/  
 .gap{
-    margin-top: -30%
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 .font-size4{
-    font-size: 800%;
+    font-size: 8rem;
     color: aliceblue;
+    margin: 0%;
+
 }
 
 
@@ -264,8 +268,9 @@ body{
   transform: translate(0);
 }
 .explore_btn{
-  margin: 0% 45%;
+  margin: 1% 0%  5% 45%;
 }
 .extra_projects{
- display: none;
+  display: none;
 }
+ /*  Rotating the faculty*/
