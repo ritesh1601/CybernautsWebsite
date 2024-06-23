@@ -3,21 +3,74 @@ body{
   padding: 0%;
   background: #0F0F0F;
 }
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* <!-- First Heading (Under the Guidance of)--> */
 .Heading{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 6%;
 }
+.gap{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+.font-size4{
+  font-size: 8rem;
+  color: aliceblue;
+  margin: 0%;
+
+}
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+/* <!-- First Heading (Under the Guidance of)--> */
+
+
+
+
+/* <!-- Faculty Information --> */
 .faculty{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 } 
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* <!-- Faculty Information --> */
+
+
+
+
+
+/* <!-- (Project Section) -->
+
+
+
+
+
+<!-- Heading project animation --> */
+.font-size1{
+  font-size: 12rem;
+}
+.gradient-text {
+  background: linear-gradient(to right, #FFA566, #FF6E06);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .staatliches-regular {
     font-family: "Staatliches", sans-serif;
@@ -29,154 +82,22 @@ body{
     font-weight: 400;
     font-style: normal;
   }
-.font-size1{
-    font-size: 12rem;
-}
+
 .font-size2{
     font-size: 11rem;
     color: aliceblue;
 }
-.gradient-text {
-    background: linear-gradient(to right, #FFA566, #FF6E06);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
+
 .font-size3{
     font-size: 4rem;
     color: azure;
 }  
-.center1{
-    margin: 0% 50%;
-}
-/*Poppins*/
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-/*poppins*/  
-.gap{
-  display: inline;
-  justify-content: center;
-  align-items: center;
-}
-.font-size4{
-    font-size: 8rem;
-    color: aliceblue;
-    margin: 0%;
-
-}
-
-
-/* ---------------------------------------------------------------------------------------------------------------------------- */
+/*<!-- Heading project animation --> */
 
 
 
 
+/* <!-- Projects display --> */
 .container{
   width:100%;
   height: 100%;
@@ -194,13 +115,6 @@ body{
 }
 .image-box{
   align-self: center;
-}
-.project-title{
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-  z-index: -1;
 }
 .project-img{
   object-fit: cover;
@@ -230,7 +144,6 @@ body{
 .image-box:hover .overlay {
   opacity: 1;
 }
-
 .text {
   color: white;
   font-size: 20px;
@@ -293,34 +206,14 @@ body{
   background-color: rgba(156, 156, 156, 0.466);
   backdrop-filter: blur(4px);
 }
+/*Code Button*/
+
+.extra_projects{
+  display: none;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* <!-- Explore All and Show less Button --> */
 .button {
   line-height: 1;
   text-decoration: none;
@@ -377,7 +270,8 @@ body{
 .explore_btn{
   margin: 1% 0%  5% 45%;
 }
-.extra_projects{
-  display: none;
-}
- /*  Rotating the faculty*/
+/* <!-- Explore All and Show less Button --> */
+
+
+
+/* <!-- (Project Section) -->
