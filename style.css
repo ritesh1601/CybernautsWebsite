@@ -11,13 +11,8 @@ body{
 
 
 /* <!-- First Heading (Under the Guidance of)--> */
-.Heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 6%;
-}
-.gap{
+
+.inline-center{
   display: inline;
   justify-content: center;
   align-items: center;
@@ -26,11 +21,12 @@ body{
   font-size: 8rem;
   color: aliceblue;
   margin: 0%;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
 }
 .poppins-regular-italic {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-style: italic;
 }
 .poppins-light-italic {
@@ -45,7 +41,8 @@ body{
 
 /* <!-- Faculty Information --> */
 .faculty{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 40rem));
     justify-content: space-evenly;
     align-items: center;
 } 
@@ -74,14 +71,12 @@ body{
 }
 .staatliches-regular {
     font-family: "Staatliches", sans-serif;
-    font-weight: 400;
     font-style: normal;
   }
-  .staatliches-regular-thin {
-    font-family: "Staatliches", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.staatliches-regular-thin {
+  font-family: "Staatliches", sans-serif;
+  font-style: normal;
+}
 
 .font-size2{
     font-size: 11rem;
@@ -109,7 +104,7 @@ body{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(1.5rem, 40rem));
+  grid-template-columns: repeat(auto-fit, minmax(1.5rem, 40rem));
   justify-content: center;
   align-items: center;
 }
@@ -125,7 +120,7 @@ body{
   width: 100%;
 }
 :hover.image-box{
-  transform: scale(1.01);
+  transform: scale(1.02);
   transition: transform 0.4s;
 }
 .overlay {
@@ -139,7 +134,6 @@ body{
   opacity: 0;
   transition: .5s ease;
   background-color: #0f0f0fc7;
-  z-index: 1;
 }
 .image-box:hover .overlay {
   opacity: 1;
@@ -152,7 +146,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  text-shadow: aliceblue 1px 1px 1px ;
+  text-shadow: rgb(255, 255, 255) 0.4px 0.4px 2px ;
 }
 
 /*Code Button*/
@@ -268,7 +262,8 @@ body{
   transform: translate(0);
 }
 .explore_btn{
-  margin: 1% 0%  5% 45%;
+    margin-top: 1%;
+    margin-bottom: 5%;
 }
 /* <!-- Explore All and Show less Button --> */
 
