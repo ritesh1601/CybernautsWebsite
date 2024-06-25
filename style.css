@@ -110,6 +110,7 @@ body{
 }
 .image-box{
   align-self: center;
+  position: relative;
 }
 .project-img{
   object-fit: cover;
